@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Mesto</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <img class="header__logo" src="./images/header-logo.svg" alt="Mesto">
+    </header>
+
+    <main>
+      <section class="profile">
+        <div class="avatar">
+          <img class="avatar__image" src="./images/avatar.png" alt="Аватарка">
+        </div>
+        <div class="profile-info">
+          <h1 class="profile-info__name">Жак-Ив Кусто</h1>
+          <button class="profile-info__edit" type="button"></button>
+          <p class="profile-info__occupation">Исследователь океана</p>
+        </div>
+        <button class="add-button" type="button"></button>
+      </section>
+
+      <section class="elements">
+        <div class="element">
+          <img class="element__image" src="./images/amsterdam.jpg" alt="Амстердам">
+          <div class="element__prop">
+            <h2 class="element__title">Амстердам</h2>
+            <button class="element__like"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__image" src="./images/arizona.jpg" alt="Аризона">
+          <div class="element__prop">
+            <h2 class="element__title">Аризона</h2>
+            <button class="element__like"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__image" src="./images/barselona.jpg" alt="Барселона">
+          <div class="element__prop">
+            <h2 class="element__title">Барселона</h2>
+            <button class="element__like"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__image" src="./images/paris.jpg" alt="Париж">
+          <div class="element__prop">
+            <h2 class="element__title">Париж</h2>
+            <button class="element__like"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__image" src="./images/rome.jpg" alt="Рим">
+          <div class="element__prop">
+            <h2 class="element__title">Рим</h2>
+            <button class="element__like"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__image" src="./images/taiwan.jpg" alt="Тайвань">
+          <div class="element__prop">
+            <h2 class="element__title">Тайвань</h2>
+            <button class="element__like"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">© 2020 Mesto Russia</p>
+    </footer>
+
+    <section class="popup">
+      <button class="popup__exit" type="button"></button>
+      <form class="popup__container">
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <input class="popup__input" type="text" placeholder="Имя" id="popup-name">
+        <input class="popup__input" type="text" placeholder="О себе" id="popup-job">
+        <button class="popup__save" type="submit">Сохранить</button>
+      </form>
+    </section>
+
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

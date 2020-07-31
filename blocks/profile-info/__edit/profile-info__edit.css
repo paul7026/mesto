@@ -1,0 +1,19 @@
+.profile-info__edit {
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  background-image: url(../../../images/edit-button.svg);
+  background-position: center;
+  padding: 0;
+  align-self: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  border: solid 1px white;
+  cursor: pointer;
+}
+
+.profile-info__edit:hover {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  transition: ease 0.3s;
+  opacity: 0.6;
+}

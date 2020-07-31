@@ -1,0 +1,18 @@
+@import url(./__edit/profile-info__edit.css);
+@import url(./__name/profile-info__name.css);
+@import url(./__occupation/profile-info__occupation.css);
+
+
+
+.profile-info {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 336px;
+  
+}
+
+ @media screen and (max-width: 600px) {
+  .profile-info {
+    justify-content: center;
+  }
+}

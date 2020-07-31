@@ -1,0 +1,11 @@
+.page {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #000000;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  min-width: 320px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+}

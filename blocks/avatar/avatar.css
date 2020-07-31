@@ -1,0 +1,12 @@
+@import url(./__image/avatar__image.css);
+
+.avatar {
+  width: 168.75px;
+  height: 127.5px;
+}
+
+@media screen and (max-width: 600px) {
+  .avatar {
+    margin-bottom: 10.25px;
+  }
+}

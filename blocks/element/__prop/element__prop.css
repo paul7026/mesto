@@ -1,0 +1,4 @@
+.element__prop {
+  display: flex;
+  justify-content: space-between;
+}

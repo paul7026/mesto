@@ -1,0 +1,12 @@
+@import url(./__image/element__image.css);
+@import url(./__like/element__like.css);
+@import url(./__prop/element__prop.css);
+@import url(./__title/element__title.css);
+
+.element {
+  background-color: white;
+  color: black;
+  border-radius: 10px 10px 10px 10px;
+  box-sizing: border-box;
+  height: 361px;
+}
