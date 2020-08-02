@@ -3,7 +3,6 @@
 @import url(./__save/popup__save.css);
 @import url(./__title/popup__title.css);
 @import url(./__exit/popup__exit.css);
-@import url(./_opend/popup_opened.css);
 
 .popup {
   width: 100%;
@@ -12,7 +11,8 @@
   position:fixed;
   top: 0;
   left: 0;
-  display: none;
+  display: flex;
+  visibility: hidden;
   flex-direction: column;
   align-items: center;
 }

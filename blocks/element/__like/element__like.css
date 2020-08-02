@@ -10,4 +10,17 @@
   background-color: white;
   box-sizing: border-box;
   align-self: center;
+  cursor: pointer;
+  margin-left: 15px;
 }
+
+.element__like:hover {
+  transition: ease 0.3s ;
+  opacity: 0.6;
+}
+
+.element__like:focus {
+  outline: none;
+}
+
+

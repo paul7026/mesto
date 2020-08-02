@@ -16,15 +16,13 @@
 
     <main>
       <section class="profile">
-        <div class="avatar">
-          <img class="avatar__image" src="./images/avatar.png" alt="Аватарка">
-        </div>
+        <img class="profile__image" src="./images/avatar.png" alt="Аватарка">
         <div class="profile-info">
           <h1 class="profile-info__name">Жак-Ив Кусто</h1>
           <button class="profile-info__edit" type="button"></button>
           <p class="profile-info__occupation">Исследователь океана</p>
         </div>
-        <button class="add-button" type="button"></button>
+        <button class="profile__add-button" type="button"></button>
       </section>
 
       <section class="elements">
@@ -74,21 +72,21 @@
     </main>
 
     <footer class="footer">
-      <p class="footer__copyright">© 2020 Mesto Russia</p>
+      <p class="footer__copyright">&COPY; 2020 Mesto Russia</p>
     </footer>
 
-    <section class="popup">
+    <div class="popup">
       <button class="popup__exit" type="button"></button>
-      <form class="popup__container">
+      <form class="popup__container" name="popup-form">
         <h3 class="popup__title">Редактировать профиль</h3>
-        <input class="popup__input" type="text" placeholder="Имя" id="popup-name">
-        <input class="popup__input" type="text" placeholder="О себе" id="popup-job">
+        <input class="popup__input" type="text" placeholder="Жак-Ив Кусто" id="popup-name" name="popup-name" required>
+        <input class="popup__input" type="text" placeholder="Исследователь океана" id="popup-job" name="popup-job" required>
         <button class="popup__save" type="submit">Сохранить</button>
       </form>
-    </section>
+    </div>
 
   </div>
-  <script src="./script.js"></script>
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>

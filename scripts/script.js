@@ -28,7 +28,7 @@ function formSubmitHandler (evt) {
 
 
 
-editButton.addEventListener('click', openPopup); 
+editButton.addEventListener('click', openPopup);
 exitButton.addEventListener('click', closePopup);
 formElement.addEventListener('submit', formSubmitHandler);
 
