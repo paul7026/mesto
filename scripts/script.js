@@ -2,7 +2,7 @@ const popup = document.querySelector('.popup');
 const editButton = document.querySelector('.profile-info__edit'); // edit button
 const exitButton = document.querySelector('.popup__exit'); // exit button
 const formElement = document.querySelector('.popup__container');
-const profileName = document.querySelector('.profile-info__name') // имя в профиле
+const profileName = document.querySelector('.profile-info__name'); // имя в профиле
 const profileOcuppation = document.querySelector('.profile-info__occupation'); //работа в профиле
 const nameInput = document.querySelector('#popup-name'); //попап поле - имя
 const jobInput  = document.querySelector('#popup-job'); //попап поле - работа
@@ -11,6 +11,8 @@ const jobInput  = document.querySelector('#popup-job'); //попап поле - 
 // ф-я открыть попап
 function openPopup() {
   popup.classList.add('popup_opened');
+  nameInput.value = profileName.textContent;
+  jobInput.value = profileOcuppation.textContent;
 }
 
 // ф-я закрыть попап
