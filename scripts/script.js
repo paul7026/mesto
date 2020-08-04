@@ -10,9 +10,9 @@ const jobInput  = document.querySelector('#popup-job'); //попап поле - 
 
 // ф-я открыть попап
 function openPopup() {
-  popup.classList.add('popup_opened');
   nameInput.value = profileName.textContent;
   jobInput.value = profileOcuppation.textContent;
+  popup.classList.add('popup_opened');
 }
 
 // ф-я закрыть попап
