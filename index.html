@@ -26,48 +26,15 @@
       </section>
 
       <section class="elements">
-        <div class="element">
-          <img class="element__image" src="./images/amsterdam.jpg" alt="Амстердам">
-          <div class="element__prop">
-            <h2 class="element__title">Амстердам</h2>
-            <button class="element__like"></button>
-          </div>
-        </div>
-        <div class="element">
-          <img class="element__image" src="./images/arizona.jpg" alt="Аризона">
-          <div class="element__prop">
-            <h2 class="element__title">Аризона</h2>
-            <button class="element__like"></button>
-          </div>
-        </div>
-        <div class="element">
-          <img class="element__image" src="./images/barselona.jpg" alt="Барселона">
-          <div class="element__prop">
-            <h2 class="element__title">Барселона</h2>
-            <button class="element__like"></button>
-          </div>
-        </div>
-        <div class="element">
-          <img class="element__image" src="./images/paris.jpg" alt="Париж">
-          <div class="element__prop">
-            <h2 class="element__title">Париж</h2>
-            <button class="element__like"></button>
-          </div>
-        </div>
-        <div class="element">
-          <img class="element__image" src="./images/rome.jpg" alt="Рим">
-          <div class="element__prop">
-            <h2 class="element__title">Рим</h2>
-            <button class="element__like"></button>
-          </div>
-        </div>
-        <div class="element">
-          <img class="element__image" src="./images/taiwan.jpg" alt="Тайвань">
-          <div class="element__prop">
+        <template id="template-element">
+          <div class="element">
+            <img class="element__image" src="./images/taiwan.jpg " alt=" ">
+            <div class="element__prop">
             <h2 class="element__title">Тайвань</h2>
             <button class="element__like"></button>
+            </div>
           </div>
-        </div>
+        </template>
       </section>
     </main>
 
@@ -75,15 +42,28 @@
       <p class="footer__copyright">&COPY; 2020 Mesto Russia</p>
     </footer>
 
-    <div class="popup">
-      <button class="popup__exit" type="button"></button>
-      <form class="popup__container" name="popup-form">
+    <!-- попап редактирования профиля -->
+    <div class="popup" id="popup-edit">
+      <button class="popup__exit" type="button" id="popup-exit-edit"></button>
+      <form class="popup__container" name="popup-form" id="popup-container-edit">
         <h3 class="popup__title">Редактировать профиль</h3>
         <input class="popup__input" type="text" placeholder="Жак-Ив Кусто" id="popup-name" name="popup-name" required>
         <input class="popup__input" type="text" placeholder="Исследователь океана" id="popup-job" name="popup-job" required>
         <button class="popup__save" type="submit">Сохранить</button>
       </form>
     </div>
+
+    <!-- попап добавления места  -->
+    <div class="popup" id="popup-add">
+      <button class="popup__exit" type="button"></button>
+      <form class="popup__container" name="popup-form" id="popup-container-add">
+        <h3 class="popup__title">Новое место</h3>
+        <input class="popup__input" type="text" placeholder="Название" id="place-name" name="place-name" required>
+        <input class="popup__input" type="text" placeholder="Ссылка на картинку" id="picture-link" name="picture-link" required>
+        <button class="popup__save" type="submit">Создать</button>
+      </form>
+    </div>
+
 
   </div>
   <script src="./scripts/script.js"></script>
