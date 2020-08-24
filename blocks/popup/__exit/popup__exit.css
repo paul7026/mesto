@@ -2,19 +2,21 @@
   width: 40.7px;
   height: 40.7px;
   padding: 0;
-  margin-left: 460px;
+  position: absolute;
+  top: -40px;
+  right: -40px;
   background-image: url(../../../images/exit-button.svg);
   border: 0;
   background-position: center;
   cursor: pointer;
-  margin-top: 148px;
+  box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0);
   z-index: 5;
+  outline: none;
 }
 
 
 .popup__exit:hover {
-  transition: ease 0.3s;
   opacity: 0.6;
 }
 

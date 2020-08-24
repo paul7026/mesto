@@ -28,10 +28,11 @@
       <section class="elements">
         <template id="template-element">
           <div class="element">
-            <img class="element__image" src="./images/taiwan.jpg " alt=" ">
+            <button class="element__delete-button" type="button" id="delet-button"></button>
+            <img class="element__image" src=" " alt=" ">
             <div class="element__prop">
-            <h2 class="element__title">Тайвань</h2>
-            <button class="element__like"></button>
+            <h2 class="element__title"></h2>
+            <button class="element__like" type="button" id="element-like"></button>
             </div>
           </div>
         </template>
@@ -44,26 +45,34 @@
 
     <!-- попап редактирования профиля -->
     <div class="popup" id="popup-edit">
-      <button class="popup__exit" type="button" id="popup-exit-edit"></button>
       <form class="popup__container" name="popup-form" id="popup-container-edit">
         <h3 class="popup__title">Редактировать профиль</h3>
         <input class="popup__input" type="text" placeholder="Жак-Ив Кусто" id="popup-name" name="popup-name" required>
         <input class="popup__input" type="text" placeholder="Исследователь океана" id="popup-job" name="popup-job" required>
         <button class="popup__save" type="submit">Сохранить</button>
+        <button class="popup__exit" type="button" id="popup-exit-edit"></button>
       </form>
     </div>
 
     <!-- попап добавления места  -->
     <div class="popup" id="popup-add">
-      <button class="popup__exit" type="button"></button>
       <form class="popup__container" name="popup-form" id="popup-container-add">
         <h3 class="popup__title">Новое место</h3>
         <input class="popup__input" type="text" placeholder="Название" id="place-name" name="place-name" required>
         <input class="popup__input" type="text" placeholder="Ссылка на картинку" id="picture-link" name="picture-link" required>
         <button class="popup__save" type="submit">Создать</button>
+        <button class="popup__exit" type="button"></button>
       </form>
     </div>
 
+    <!-- попап большая картинка  -->
+    <div class="popup" id="popup-big-img">
+      <figure class="popup__figure">
+        <img class="popup__image" src="" alt="">
+        <figcaption class="popup__image-caption"></figcaption>
+        <button class="popup__exit" type="button"></button>
+      </figure>
+    </div>
 
   </div>
   <script src="./scripts/script.js"></script>
