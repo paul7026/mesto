@@ -75,7 +75,7 @@ function createCard(el) {
  });
 
 // ф-я ред-я профиль
-function formSubmitHandler(evt) {
+function handleFormSubmit(evt) {
   evt.preventDefault();
   profileName.textContent = nameInput.value;
   profileOccuppation.textContent = jobInput.value;
@@ -88,7 +88,7 @@ function togglePopup(element) {
 }
 
 //ф-я добавления карточки
-function formCreateHandler(evt) {
+function handleFormCreate(evt) {
   evt.preventDefault();
   const card = {
     name: '',
@@ -122,7 +122,7 @@ exitButtonEdit.addEventListener('click', function () {
   togglePopup(popupEdit);
 });
 
-formElement.addEventListener('submit', formSubmitHandler);
+formElement.addEventListener('submit', handleFormSubmit);
 
 // события для попапа добавления
 addButton.addEventListener('click', function () {
@@ -133,7 +133,7 @@ exitButtonAdd.addEventListener('click', function () {
   togglePopup(popupAdd);
 });
 
-addFormElement.addEventListener('submit', formCreateHandler);
+addFormElement.addEventListener('submit', handleFormCreate);
 
 
 
